@@ -231,7 +231,7 @@ def pregunta_03():
     )
 
     # Entrene el pipeline con los datos de entrenamiento.
-    pipeline.fit(x_train, y_train)
+    pipeline.fit(X_train, y_train)
 
     # # Retorne el pipeline entrenado
     return pipeline
