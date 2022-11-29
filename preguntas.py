@@ -161,11 +161,14 @@ def pregunta_01():
     X = df.copy()
 
     # Remueva la columna `default` del DataFrame `X`.
-    X.drop(["default"], axis=1)
+    X.drop("default",axis=1, inplace=True)
 
     # Retorne `X` y `y`
     return X, y
+X,y = pregunta_01()
 
+print(X.shape)
+print(y.shape)
 
 def pregunta_02():
     """
